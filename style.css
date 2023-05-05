@@ -1,0 +1,112 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#91b9cf, #ddebf0);
+}
+
+.title{
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 85px;
+    color: #172935;
+    animation: fliptitle 2s;
+}
+
+@keyframes fliptitle {
+    from{
+        transform: rotateY(90deg);
+    }
+    to{
+        transform: rotateY(0deg);
+    }
+
+}
+
+.containerInput{
+    padding: 15px;
+    margin: 50px 0;
+    display: flex ;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px rgba(96, 150, 180, 0.9);
+}
+
+
+.containerInput {
+    background-color: #f4f8fb;
+    transition: all 0.6s ease-in-out;
+}
+
+.containerInput:hover {
+    background-color: #2c4c60 !important;
+}
+
+.containerInput {
+    color: #91b9cf !important;
+    transition: all 0.6s ease-in-out !important;
+}
+
+.containerInput:hover .containerInput input{
+    color: #91b9cf !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .containerInput:hover
+    {
+        background-color: #f4f8fb !important;
+        transition: none;
+    }
+    .containerInput:hover .containerInput {
+        color: #91b9cf !important;
+    }
+}
+
+.containerInput input{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #91b9cf;
+    outline: none;
+    margin-right: 8px;
+}
+
+.containerInput input::placeholder{
+    color: #91b9cf;
+}
+
+.buttonSearch{
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.buttonSearch:hover{
+    transform: scale(1.2);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #8ac3d6;
+    width: 350px;
+    border-radius: 40px;
+}
+
+.main h2{
+    color: #2c4c60;
+    margin: 6px 0;
+    font-size: 30px;
+}
+
+.main span{
+    color: #2c4c60;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
